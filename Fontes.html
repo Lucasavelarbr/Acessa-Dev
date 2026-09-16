@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Fontes.css">
+    <title>Ferramentas | AcessaDev</title>
+</head>
+<body>
+<header>
+    <a href="./ferramentas.html" class="logo">
+        <img src="/IMG/logo.png" alt="Logo do Acessa Dev">
+    </a>
+    <nav class="navbar" aria-label="Navegação principal">
+        <button class="menu-toggle" 
+                id="menu-toggle" 
+                aria-expanded="false" 
+                aria-controls="nav-list" 
+                aria-label="Abrir menu hamburger">
+
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav-list" id="nav-list">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./Guias.html">Guias</a></li>
+            <li><a href="./ferramentas.html">Ferramentas</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+  <main>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <h1 id="titulo-principal">
+                Teste de <span>tamanho da fonte</span>
+            </h1>
+
+            <p>
+                Verifique se o tamanho do texto oferece uma experiência de leitura confortável e acessível.
+            </p>
+        </section>
+
+        <section class="guideline" aria-labelledby="titulo-referencia">
+            <div class="guideline-container">
+                <div class="guideline-icon" aria-hidden="true">
+                    Aa
+                </div>
+
+                <div class="guideline-content">
+
+                    <h2 id="titulo-referencia">
+                        Sobre o tamanho da fonte
+                    </h2>
+
+                    <p>
+                        O tamanho do texto influencia diretamente a legibilidade
+                        e a experiência de pessoas com diferentes necessidades
+                        visuais.
+                    </p>
+
+                    <p>
+                        Evite utilizar textos excessivamente pequenos,
+                        especialmente em informações importantes, controles,
+                        formulários e conteúdos de leitura contínua.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="font-tool" aria-labelledby="titulo-ferramenta">
+
+            <div class="font-container">
+
+                <div class="font-controls">
+
+                    <h2 id="titulo-ferramenta">
+                        Configure o tamanho
+                    </h2>
+
+                    <div class="form-group">
+
+                        <label for="font-size">
+                            Tamanho da fonte
+                        </label>
+
+                        <div class="input-unit">
+
+                            <input
+                                type="number"
+                                id="font-size"
+                                name="font-size"
+                                value="16"
+                                min="8"
+                                max="100"
+                                aria-describedby="font-size-help">
+
+                            <span aria-hidden="true">px</span>
+
+                        </div>
+
+                        <p id="font-size-help">
+                            Informe o tamanho da fonte que deseja testar.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="line-height">
+                            Altura da linha
+                        </label>
+
+                        <div class="input-unit">
+
+                            <input
+                                type="number"
+                                id="line-height"
+                                name="line-height"
+                                value="1.5"
+                                min="1"
+                                max="3"
+                                step="0.1">
+
+                            <span aria-hidden="true">x</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="button" class="btn-testar">
+                        Testar tamanho
+                    </button>
+
+                </div>
+
+
+                <div class="font-result">
+
+                    <div class="result-header">
+
+                        <span class="result-label">
+                            Resultado
+                        </span>
+
+                        <span class="result-status">
+                            Adequado
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-number">
+
+                        <strong>16</strong>
+
+                        <span>px</span>
+
+                    </div>
+
+
+                    <p class="result-description">
+                        O tamanho informado oferece uma boa base para textos corridos em interfaces digitais.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="preview" aria-labelledby="titulo-preview">
+
+            <div class="preview-container">
+
+                <div class="preview-header">
+
+                    <h2 id="titulo-preview">
+                        Veja como fica
+                    </h2>
+
+                    <span>
+                        16px
+                    </span>
+
+                </div>
+
+
+                <div class="preview-content">
+
+                    <p>
+                        A acessibilidade digital permite que mais pessoas possam
+                        acessar informações, utilizar serviços e interagir com
+                        produtos digitais de forma independente.
+                    </p>
+
+                    <p>
+                        Um texto bem dimensionado contribui para uma experiência
+                        de leitura mais confortável, especialmente para pessoas
+                        com baixa visão.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+   <footer class="footer" id="sobre">
+        <div class="footer-logo">
+            <img src="./IMG/logo-branco.png" alt="Acessa Dev">
+        </div>
+
+        <div class="footer-descricao">
+            <p>Ferramentas, guias e componentes para ajudar desenvolvedores a criarem experiências digitais mais acessíveis.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Links do rodapé">
+            <h3>Navegação</h3>
+
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./ferramentas.html">Ferramentas</a></li>
+                <li><a href="./Guias.html">Guias</a></li>
+                <li><a href="#componentes">Componentes</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-copy">
+            <p>© 2026 Acessa Dev.</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>]
+    <script src="/Fontes.js"></script>
+</body>
+</html

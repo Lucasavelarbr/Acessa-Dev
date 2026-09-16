@@ -1,0 +1,594 @@
+/* =========================================
+   VARIÁVEIS
+========================================= */
+
+:root {
+    --background: #ffffff;
+    --botoes: #4920B4;
+    --roxo-claro: #6D3DF5;
+    --texto: #000000;
+    --texto-secundario: #3C3C3C;
+    --branco: #ffffff;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--texto);
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+
+.logo img{
+    width: 60%;
+    height: auto;
+    display: block;
+    position: fixed;
+    top: -10px;
+    left: 0;
+    z-index: 5;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 4;
+    background-color: var(--background)
+}
+
+.menu-toggle{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.menu-toggle::before {
+    content: '';
+    position: absolute;
+    top: -10px;  
+    bottom: -10px;
+    left: -10px;  
+    right: -10px; 
+}
+
+.menu-toggle:focus-visible{
+    outline:3px solid #5B2EFF;
+    outline-offset:6px;
+    border-radius:16px;
+}
+
+.menu-toggle .bar{
+    width: 80%;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+    transform-origin: center;
+    display: block;
+    background-color: var(--botoes);
+}
+
+.menu-toggle.active .bar:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+.menu-toggle.active .bar:nth-child(2){
+    opacity: 0;
+}
+.menu-toggle.active .bar:nth-child(3){
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+.nav-list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 70dvh;
+    list-style-type: none;
+    background-color: var(--background);
+    transform: translateX(100%);
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+    box-shadow: 0 0 20px -10px black;
+    border-radius: 10px;
+}
+
+.nav-list.active{
+    transform: translateX(0); 
+}
+
+.nav-list li{
+    margin: 20px;
+    padding-top: 60px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.nav-list a:focus-visible{
+    outline:3px solid #5B2EFF;
+    outline-offset:6px;
+    border-radius:16px;
+}
+
+/* SEÇÃO PRINCIPAL */
+.secao-principal {
+    padding: 0 2rem;
+    margin-top: 8rem;
+}
+
+h1{
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 span{
+    color: var(--botoes);
+}
+
+.secao-principal p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--texto);
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+
+/* FERRAMENTAS*/
+.tools {
+    padding: 10px 20px 40px;
+}
+
+.tools .container {
+    margin: 0 auto;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+
+/* CARDS*/
+.tools-card {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    border-radius: 18px;
+    text-decoration: none;
+    box-shadow: 0 0 20px -12px var(--texto);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tools-card:focus-visible {
+    outline: 3px solid var(--roxo-claro);
+    outline-offset: 5px;
+}
+
+
+/* =========================================
+   ÍCONE + TÍTULO
+========================================= */
+
+.tools-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tools-icon img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.tools-icon h3 {
+    color: var(--texto);
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DESCRIÇÃO DO CARD
+========================================= */
+
+.paragrafo {
+    color: var(--texto-secundario);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px 0 25px;
+}
+
+
+/* =========================================
+   LINK DO CARD
+========================================= */
+
+.tools-link {
+    display: inline-block;
+    align-self: flex-end;
+    margin-top: auto;
+    color: var(--botoes);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.tools-link:hover {
+    color: var(--roxo-claro);
+}
+
+
+/* =========================================
+   SEÇÃO FINAL
+========================================= */
+
+.final {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.final-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f1e3ff 100%
+    );
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.final-container img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.final-container h3 {
+    color: var(--botoes);
+    font-size: 1.5rem;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.final-container p {
+    max-width: 650px;
+    color: var(--texto-secundario);
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    margin-top: 60px;
+    padding: 45px 25px 25px;
+    background-color: #290996;
+    color: var(--branco);
+    border-radius: 25px 25px 0 0;
+}
+
+
+/* =========================================
+   LOGO FOOTER
+========================================= */
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   DESCRIÇÃO FOOTER
+========================================= */
+
+.footer-descricao {
+    margin-bottom: 35px;
+}
+
+.footer-descricao p {
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   NAVEGAÇÃO FOOTER
+========================================= */
+
+.footer-nav {
+    margin-bottom: 35px;
+}
+
+.footer-nav h2 {
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav li {
+    margin-bottom: 12px;
+}
+
+.footer-nav a {
+    display: inline-block;
+    padding: 5px 0;
+    color: var(--branco);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav a:focus-visible {
+    outline: 2px solid var(--branco);
+    outline-offset: 5px;
+    border-radius: 4px;
+}
+
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.footer-copy {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+}
+
+.footer-copy p {
+    font-size: 0.95rem;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 600px) {
+
+    .secao-principal {
+        padding: 0 40px;
+    }
+
+    .secao-principal h1 {
+        font-size: 2rem;
+    }
+
+    .secao-principal p {
+        font-size: 1.1rem;
+    }
+
+    .tools {
+        padding: 20px 40px 50px;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .tools-card {
+        min-height: 300px;
+    }
+
+    .final {
+        padding: 30px 40px;
+    }
+
+    .footer {
+        padding: 50px 40px 30px;
+    }
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 900px) {
+
+    header {
+        height: 90px;
+    }
+
+    .navbar {
+        padding: 0 50px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        background-color: transparent;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .nav-list li {
+        margin: 0;
+    }
+
+    .nav-list a {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    main {
+        padding-top: 130px;
+    }
+
+    .secao-principal {
+        max-width: 1200px;
+        margin: 0 auto 50px;
+        padding: 0 50px;
+    }
+
+    .secao-principal h1 {
+        font-size: 2.6rem;
+    }
+
+    .secao-principal p {
+        font-size: 1.15rem;
+        max-width: 800px;
+    }
+
+    .tools {
+        padding: 20px 50px 60px;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .tools-card {
+        min-height: 320px;
+        padding: 30px;
+    }
+
+    .tools-icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tools-icon h3 {
+        font-size: 1.25rem;
+    }
+
+    .paragrafo {
+        font-size: 1rem;
+    }
+
+    .final {
+        padding: 30px 50px;
+    }
+
+    .final-container {
+        padding: 50px;
+    }
+
+    .final-container img {
+        max-width: 250px;
+    }
+
+    .final-container h3 {
+        font-size: 1.8rem;
+    }
+
+    .final-container p {
+        font-size: 1.1rem;
+    }
+
+    .footer {
+        padding: 60px 50px 30px;
+    }
+}
+
+
+/* =========================================
+   REDUÇÃO DE MOVIMENTO
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
