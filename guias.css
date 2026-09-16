@@ -260,6 +260,7 @@ h1 span{
     display: inline-flex;
     align-items: center;
     gap: 1rem;
+    margin-left: 10rem;
     color: var(--botoes);
     font-size: 1rem;
     font-weight: bold;
