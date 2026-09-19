@@ -36,13 +36,13 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-.logo img {
-    width: 60%;
+.logo img{
+    width: 35%;
     height: auto;
     display: block;
     position: fixed;
-    top: -10px;
-    left: 0;
+    top: 30px;
+    left: 10px;
     z-index: 5;
 }
 

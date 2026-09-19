@@ -25,12 +25,12 @@ body{
 }
 
 .logo img{
-    width: 60%;
+    width: 35%;
     height: auto;
     display: block;
     position: fixed;
-    top: -10px;
-    left: 0;
+    top: 30px;
+    left: 10px;
     z-index: 5;
 }
 
@@ -314,17 +314,18 @@ body{
    TROCAR CORES
 ========================================= */
 .swap-button {
-    width: 100%;
+    width: 20%;
     min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem auto;
-    background: var(--background);
-    color: var(--botoes);
+    background: var(--botoes);
+    color: var(--background);
     cursor: pointer;
     font-size: 2rem;
     border: none;
+    border-radius: 10px;
 }
 
 .swap-button:focus-visible {
@@ -569,6 +570,608 @@ body{
     text-align: center;
     font-size: 1.3rem;
     margin-bottom: 20px;
+}
+
+/* TABLET */
+
+@media (min-width: 37.5rem){
+    .logo img {
+        width: 20%;
+        left: 30px;
+    }
+
+     /* =====================================================
+       CONTAINER
+       ===================================================== */
+
+    .contrast-cool {
+        padding: 8rem 2rem 5rem;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 52rem;
+        margin: 0 auto;
+    }
+
+
+    /* =====================================================
+       CABEÇALHO
+       ===================================================== */
+
+    .contrast-cool h1 {
+        margin: 2rem 0 2rem;
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .container > p {
+        max-width: 48rem;
+        margin: 0 auto 3rem;
+        font-size: 2rem;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       CARDS PRINCIPAIS
+       ===================================================== */
+
+    .contrast-colors,
+    .contrast-result,
+    .contrast-preview {
+        padding: 1.75rem;
+        border-radius: 12px;
+        max-width: 80%;
+        margin: 1.5rem auto;
+    }
+
+    .contrast-colors h2,
+    .contrast-result h2,
+    .contrast-preview h2 {
+        margin: .5rem 0 1.5rem;
+        font-size: 2rem;
+    }
+
+
+    /* =====================================================
+       CAMPOS DE CORES
+       ===================================================== */
+
+    .color-field {
+        margin-bottom: 2rem;
+    }
+
+    .color-field > label {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .color-control {
+        gap: 2rem;
+    }
+
+
+    /* =====================================================
+       COLOR PICKER
+       ===================================================== */
+
+    .color-control input[type="color"] {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    /* =====================================================
+       HEX
+       ===================================================== */
+
+    .hex-wrapper input[type="text"] {
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .copy-button {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    /* =====================================================
+       TROCAR CORES
+       ===================================================== */
+
+    .swap-button {
+        min-height: 80px;
+        max-width: 20%;
+        margin: 1rem auto;
+        font-size: 2.2rem;
+    }
+
+
+    /* =====================================================
+       RESULTADO
+       ===================================================== */
+
+    .contrast-score {
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .contrast-score strong {
+        font-size: 3.5rem;
+    }
+
+    .level-badge {
+        min-height: 38px;
+        padding: .4rem 1rem;
+        font-size: 1.8rem;
+    }
+
+    .contrast-result h3 {
+        margin: .75rem 0 .5rem;
+        font-size: 2rem;
+    }
+
+    .contrast-result > p {
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       WCAG
+       ===================================================== */
+
+    .wcag-row {
+        min-height: 60px;
+        padding: .75rem;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .wcag-row small {
+        font-size: 1.2rem;
+    }
+
+    .status {
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+
+    /* =====================================================
+       DETALHES TÉCNICOS
+       ===================================================== */
+
+    .technical-details {
+        margin-top: 1.25rem;
+    }
+
+    .technical-content {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       PRÉ-VISUALIZAÇÃO
+       ===================================================== */
+
+    .preview-box {
+        min-height: 260px;
+        padding: 2rem;
+    }
+
+    .preview-box p {
+        max-width: 80%;
+        font-size: 1.5rem;
+    }
+
+     /* footer */
+  .footer-logo img {
+        width: 30%;
+        height: auto;
+        display: block;
+        margin: 0 auto -50px;
+    }
+
+    .footer-nav ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav li{
+        text-decoration: underline;
+    }
+
+    .footer-nav a{
+        font-size: 1.5rem;
+    }
+
+    .footer-nav h3{
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .footer-descricao {
+        margin: 30px auto;
+        max-width: 60%;
+        
+    }
+
+    .footer-descricao p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 56rem) {
+
+    /* HEADER */
+    header {
+        height: 90px;
+    }
+
+    .navbar {
+        height: 90px;
+        padding: 0 4rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        position: fixed;
+        width: 10%;
+        height: auto;
+        top: 24px;
+        left: 4rem;
+    }
+
+    /* MENU */
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        right: 4rem;
+        width: auto;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        transform: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list a {
+        display: inline-block;
+        padding: .5rem;
+        color: var(--botoes);
+        font-size: 1.1rem;
+        text-decoration: none;
+        transition: color .2s ease;
+    }
+
+    .nav-list a:hover {
+        color: #290996;
+        text-decoration:underline;;
+    }
+
+
+    .contrast-cool {
+        padding: 9rem 2rem 6rem;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 72rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        column-gap: 2rem;
+        align-items: start;
+    }
+
+
+    /* =====================================================
+       CABEÇALHO
+       ===================================================== */
+
+    .contrast-cool h1 {
+        grid-column: 1 / -1;
+        margin: -5rem 0 0;
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .container > p {
+        grid-column: 1 / -1;
+        max-width: 62rem;
+        margin: -1rem auto 3rem;
+        font-size: 1.3rem;
+        line-height: 1.75;
+    }
+
+
+    /* =====================================================
+       ESCOLHA DAS CORES
+       ===================================================== */
+
+    .contrast-colors {
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+        border-radius: 14px;
+        margin: 0 auto;
+    }
+
+    .contrast-colors h2 {
+        margin: .25rem 0 2rem;
+        font-size: 1.5rem;
+    }
+
+
+    /* =====================================================
+       PRÉ-VISUALIZAÇÃO
+       ===================================================== */
+
+    .contrast-preview {
+        grid-column: 2;
+        grid-row: 3;
+        width: 100%;
+        margin: 0 auto 100px auto;
+        padding: 2rem;
+        border-radius: 14px;
+    }
+
+    .contrast-preview h2 {
+        margin: .25rem 0 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .preview-box {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .preview-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .preview-box p {
+        max-width: 85%;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       CAMPOS DE CORES
+       ===================================================== */
+
+    .color-field {
+        margin-bottom: 2rem;
+    }
+
+    .color-field > label {
+        margin-bottom: .75rem;
+        font-size: 1rem;
+    }
+
+    .color-control {
+        gap: 1rem;
+    }
+
+
+    /* =====================================================
+       COLOR PICKER
+       ===================================================== */
+
+    .color-control input[type="color"] {
+        width: 54px;
+        height: 54px;
+    }
+
+
+    /* =====================================================
+       HEX
+       ===================================================== */
+
+    .hex-wrapper {
+        min-height: 54px;
+    }
+
+    .hex-wrapper input[type="text"] {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .copy-button {
+        width: 55px;
+        height: 55px;
+    }
+
+
+    /* =====================================================
+       TROCAR CORES
+       ===================================================== */
+
+    .swap-button {
+        grid-column: 1 / -1;
+        grid-row: 4;
+        width: 70px;
+        min-height: 50px;
+        margin: -18rem auto 0;
+        font-size: 2.2rem;
+    }
+
+
+    /* =====================================================
+       RESULTADO DA RAZÃO DE CONTRASTE
+       ===================================================== */
+
+    .contrast-result {
+        grid-column: 1 / -1;
+        grid-row: 5;
+        width: 50%;
+        margin: -5rem auto 0;
+        padding: 2rem;
+        border-radius: 14px;
+    }
+
+    .contrast-result h2 {
+        margin: .25rem 0 1.5rem;
+        font-size: 1.45rem;
+    }
+
+    .contrast-score {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contrast-score strong {
+        font-size: 3.5rem;
+    }
+
+    .level-badge {
+        min-height: 38px;
+        padding: .4rem 1rem;
+        font-size: .9rem;
+    }
+
+    .contrast-result h3 {
+        margin: .75rem 0 .5rem;
+        font-size: 1.7rem;
+    }
+
+    .contrast-result > p {
+        margin-bottom: 1.5rem;
+
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       WCAG
+       ===================================================== */
+
+    .wcag-row {
+        min-height: 62px;
+        padding: .8rem;
+
+        gap: 2rem;
+
+        font-size: 1rem;
+    }
+
+    .wcag-row small {
+        margin-top: .35rem;
+        font-size: .85rem;
+    }
+
+    .wcag-status {
+        gap: .5rem;
+    }
+
+    .status {
+        min-width: 44px;
+        min-height: 32px;
+        padding: .3rem .55rem;
+    }
+
+    .status.passed {
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       DETALHES TÉCNICOS
+       ===================================================== */
+
+    .technical-details {
+        margin-top: 1.5rem;
+    }
+
+    .technical-content {
+        padding-top: 1rem;
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+    /* ==============================
+       FOOTER
+       ============================== */
+
+    .footer {
+        padding: 3rem 4rem;
+        margin-top: 6rem;
+    }
+
+    .footer-logo img {
+        width: 20%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer-descricao {
+        max-width: 40%;
+        margin: 0 auto 2rem;
+    }
+
+    .footer-descricao p {
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .footer-nav h3 {
+        margin: 2rem auto 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-nav li {
+        margin: 0;
+    }
+
+    .footer-nav a {
+        font-size: 1rem;
+    }
+
+    .footer-copy {
+        margin-top: 2rem;
+        font-size: .9rem;
+    }
 }
 
 /* REDUÇÃO DE MOVIMENTO */

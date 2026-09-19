@@ -36,13 +36,13 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-.logo img {
-    width: 60%;
+.logo img{
+    width: 35%;
     height: auto;
     display: block;
     position: fixed;
-    top: -10px;
-    left: 0;
+    top: 30px;
+    left: 10px;
     z-index: 5;
 }
 
@@ -590,6 +590,645 @@ body {
     font-size: 1.3rem;
     margin-bottom: 20px;
 }
+
+@media (min-width: 37.5rem){
+    .logo img {
+        width: 20%;
+        left: 30px;
+    }
+
+    /* =====================================================
+       PÁGINA
+       ===================================================== */
+
+    .form-page {
+        padding: 8rem 2rem 5rem;
+    }
+
+    .form-content {
+        width: 100%;
+        max-width: 52rem;
+        margin: 0 auto;
+    }
+
+
+    /* =====================================================
+       CABEÇALHO
+       ===================================================== */
+
+    .article-header {
+        margin-bottom: 3.5rem;
+    }
+
+    .article-header h1 {
+        margin-left: 0;
+        margin-bottom: 1.25rem;
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .article-introduction {
+        margin-left: 0;
+        font-size: 1.7rem;
+        line-height: 1.7;
+        margin-bottom: -2rem;
+    }
+
+
+    .article-summary {
+        padding: 1.75rem 2rem;
+        border-radius: 12px;
+        margin-bottom: 3.5rem;
+    }
+
+    .article-summary h2 {
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .article-summary ul {
+        padding-left: 1.4rem;
+    }
+
+    .article-summary li {
+        margin-left: 0;
+        margin-bottom: .7rem;
+        font-size: 1.7rem;
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       SEÇÕES
+       ===================================================== */
+
+    .article-section {
+        margin-bottom: 4rem;
+    }
+
+    .section-heading {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        border-radius: 9px;
+    }
+
+    .section-heading h2 {
+        margin-left: 0;
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .article-section > p {
+        margin-left: 0;
+        margin-bottom: 1.25rem;
+        font-size: 1.6rem;
+        line-height: 1.75;
+    }
+
+
+    /* =====================================================
+       CÓDIGO INLINE
+       ===================================================== */
+
+    .article-section code {
+        padding: .2rem .4rem;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+
+    /* =====================================================
+       DESTAQUE
+       ===================================================== */
+
+    .article-highlight {
+        gap: 1.25rem;
+        margin: 2rem 0 -2rem;
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .article-highlight > i {
+        font-size: 2rem;
+    }
+
+    .article-highlight p {
+        margin-top: .5rem;
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .article-highlight strong {
+        font-size: 1.8rem;
+    }
+
+
+    /* =====================================================
+       EXEMPLOS DE CÓDIGO
+       ===================================================== */
+
+    .code-example {
+        margin: 2.5rem 0 3rem;
+    }
+
+    .code-example h3 {
+        padding: 1rem 0;
+        font-size: 1.8rem;
+    }
+
+    .code-example pre {
+        border-radius: 10px;
+    }
+
+    .code-example code {
+        padding: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 1.75;
+    }
+
+
+    /* =====================================================
+       SIMULAÇÃO DO FORMULÁRIO
+       ===================================================== */
+
+    .form-preview {
+        margin: 2.5rem 0 3.5rem;
+        padding: 2rem;
+        border-radius: 12px;
+    }
+
+    .form-preview h3 {
+        margin-bottom: 1.75rem;
+        font-size: 1.3rem;
+    }
+
+    .form-preview form {
+        gap: 1.5rem;
+    }
+
+    .form-field {
+        gap: .6rem;
+    }
+
+    .form-field label {
+        font-size: 1rem;
+    }
+
+    .form-field input {
+        min-height: 50px;
+        font-size: 1rem;
+    }
+
+    .form-preview button {
+        min-height: 50px;
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       CAMPOS DE FORMULÁRIO
+       ===================================================== */
+
+    .form-example {
+        margin-bottom: 3rem;
+    }
+
+    .form-example h3 {
+        margin-bottom: 1.25rem;
+        font-size: 1.2rem;
+    }
+
+    .form-field-error label,
+    .required-field label {
+        font-size: 1rem;
+    }
+
+    .form-field-error input {
+        min-height: 50px;
+        font-size: 1rem;
+    }
+
+    .form-error-message {
+        font-size: .95rem;
+    }
+
+    .form-fieldset {
+        padding: 1.25rem;
+    }
+
+    /* footer */
+    .footer-logo img {
+        width: 30%;
+        height: auto;
+        display: block;
+        margin: 0 auto -50px;
+    }
+
+    .footer-nav ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav li{
+        text-decoration: underline;
+    }
+
+    .footer-nav h3{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .footer-descricao {
+        margin: 30px auto;
+        max-width: 60%;
+        
+    }
+
+    .footer-descricao p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 56rem) {
+
+    /* HEADER */
+    header {
+        height: 90px;
+    }
+
+    .navbar {
+        height: 90px;
+        padding: 0 4rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        position: fixed;
+        width: 145px;
+        height: auto;
+        top: 24px;
+        left: 4rem;
+    }
+
+    /* MENU */
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        right: 4rem;
+        width: auto;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        transform: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list a {
+        display: inline-block;
+        padding: .5rem;
+        color: var(--botoes);
+        font-size: 1.3rem;
+        text-decoration: none;
+        transition: color .2s ease;
+    }
+
+    .nav-list a:hover {
+        color: #290996;
+        text-decoration:underline;;
+    }
+
+
+      .form-page {
+        padding: 9rem 2rem 6rem;
+    }
+
+    .form-content {
+        width: 100%;
+        max-width: 72rem;
+        margin: 0 auto;
+    }
+
+
+    /* =====================================================
+       CABEÇALHO
+       ===================================================== */
+
+    .article-header {
+        max-width: 68rem;
+        margin: 0 auto 4rem;
+    }
+
+    .article-header h1 {
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+        font-size: 4rem;
+        line-height: 1.15;
+    }
+
+    .article-introduction {
+        max-width: 64rem;
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .reading-time {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       RESUMO
+       ===================================================== */
+
+    .article-summary {
+        max-width: 68rem;
+        margin: 0 auto 4rem;
+        padding: 2rem 2.5rem;
+        border-radius: 14px;
+        margin-top: 8rem;
+    }
+
+    .article-summary h2 {
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .article-summary ul {
+        padding-left: 1.5rem;
+    }
+
+    .article-summary li {
+        margin-left: 0;
+        margin-bottom: .75rem;
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+
+    /* =====================================================
+       SEÇÕES
+       ===================================================== */
+
+    .article-section {
+        max-width: 68rem;
+        margin: 0 auto 5rem;
+    }
+
+    .section-heading {
+        gap: 1.25rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .section-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 1.6rem;
+        border-radius: 10px;
+    }
+
+    .section-heading h2 {
+        margin-left: 0;
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .article-section > p {
+        max-width: 66rem;
+        margin-left: 0;
+        margin-bottom: 1.25rem;
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+
+
+    /* =====================================================
+       CÓDIGO INLINE
+       ===================================================== */
+
+    .article-section code {
+        padding: .2rem .4rem;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+
+    /* =====================================================
+       DESTAQUE
+       ===================================================== */
+
+    .article-highlight {
+        max-width: 68rem;
+        gap: 1.5rem;
+        margin: 2.5rem auto -1rem;
+        padding: 1.75rem 2rem;
+        border-radius: 14px;
+    }
+
+    .article-highlight > i {
+        font-size: 2.2rem;
+    }
+
+    .article-highlight p {
+        margin-top: .25rem;
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+
+    .article-highlight strong {
+        font-size: 1.8rem;
+    }
+
+
+    /* =====================================================
+       EXEMPLOS DE CÓDIGO
+       ===================================================== */
+
+    .code-example {
+        max-width: 68rem;
+        margin: 2.5rem auto 3.5rem;
+    }
+
+    .code-example h3 {
+        padding: 1rem 0;
+        font-size: 1.8rem;
+    }
+
+    .code-example pre {
+        border-radius: 12px;
+    }
+
+    .code-example code {
+        padding: 1.75rem;
+        font-size: 1.7rem;
+        line-height: 1.8;
+    }
+
+
+    /* =====================================================
+       SIMULAÇÃO DO FORMULÁRIO
+       ===================================================== */
+
+    .form-preview {
+        max-width: 68rem;
+        margin: 2.5rem auto 4rem;
+        padding: 2.25rem 2.5rem;
+        border-radius: 14px;
+    }
+
+    .form-preview h3 {
+        margin-bottom: 2rem;
+        font-size: 1.35rem;
+    }
+
+    .form-preview form {
+        gap: 1.5rem;
+    }
+
+    .form-field {
+        gap: .6rem;
+    }
+
+    .form-field label {
+        font-size: 1rem;
+    }
+
+    .form-field input {
+        min-height: 52px;
+        padding: .8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .form-preview button {
+        min-height: 52px;
+        padding: .8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       CAMPOS DE FORMULÁRIO
+       ===================================================== */
+
+    .form-example {
+        max-width: 68rem;
+        margin: 0 auto 3.5rem;
+    }
+
+    .form-example h3 {
+        margin-bottom: 1.25rem;
+        font-size: 1.2rem;
+    }
+
+    .form-field-error label,
+    .required-field label {
+        font-size: 1rem;
+    }
+
+    .form-field-error input {
+        min-height: 52px;
+        padding: .8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .form-error-message {
+        font-size: .95rem;
+        line-height: 1.6;
+    }
+
+    .form-fieldset {
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+        /* ==============================
+       FOOTER
+       ============================== */
+
+    .footer {
+        padding: 3rem 4rem;
+        margin-top: 6rem;
+    }
+
+    .footer-logo img {
+        width: 20%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer-descricao {
+        max-width: 40%;
+        margin: 0 auto 2rem;
+    }
+
+    .footer-descricao p {
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .footer-nav h3 {
+        margin: 2rem auto 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-nav li {
+        margin: 0;
+    }
+
+    .footer-nav a {
+        font-size: 1rem;
+    }
+
+    .footer-copy {
+        margin-top: 2rem;
+        font-size: .9rem;
+    }
+}
+
+
 
 /* REDUÇÃO DE MOVIMENTO */
 @media (prefers-reduced-motion: reduce) {

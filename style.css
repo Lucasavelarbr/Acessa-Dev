@@ -4,6 +4,8 @@
     --botoes: #4920B4;
     --texto: #000;
     --text-secundário: #2f2e2e00;
+     --roxo-claro: #f4f0ff;
+    --roxo-destaque: #dfd7f7;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -25,12 +27,12 @@ body{
 }
 
 .logo img{
-    width: 60%;
+    width: 35%;
     height: auto;
     display: block;
     position: fixed;
-    top: -10px;
-    left: 0;
+    top: 30px;
+    left: 10px;
     z-index: 5;
 }
 
@@ -181,41 +183,6 @@ h1 span{
     border-radius:16px;
 }
 
-.botao-comecar i{
-    font-size: 1.5rem;
-    align-items: center;
-    display: flex;
-    margin-left: 5px;
-}
-
-.botao-projeto{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 2rem;
-    gap: .5rem;
-    margin: 0 auto;
-    background-color: transparent;
-    border: 2px solid rgb(234, 232, 232);
-    height: 60px;
-    width: 90%;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-left: 15px;
-    color: var(--texto);
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 10px -6px black;
-}
-
-.botao-projeto:focus-visible{
-    outline:3px solid #5B2EFF;
-    outline-offset:6px;
-    border-radius:16px;
-}
-
 .img-decorativa img{
     width: 100%;
     height: auto;
@@ -266,7 +233,7 @@ h1 span{
 .acessibilidade-conteudo h3{
     font-size: 1.3rem;
     margin-bottom: .5rem;
-    color: #111827;
+    color: var(--botoes);
 }
 
 .recursos{
@@ -519,6 +486,575 @@ h1 span{
     margin-bottom: 20px;
 }
 
+
+/* TABLET */
+@media (min-width: 37.5rem){
+    .logo img {
+        width: 20%;
+        left: 30px;
+    }
+
+    .secao-principal {
+        padding: 0 40px;
+    }
+
+    .secao-principal h1 {
+        font-size: 2rem;
+        max-width: 90%;
+        margin: 150px auto 20px;
+        text-align: center;
+    }
+
+    .secao-principal p {
+        font-size: 1.2rem;
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto 50px;
+    }
+
+    .img-decorativa img{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .botao-comecar{
+        height: 60px;
+        width: 50%;
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 0 auto ;
+        display: block;
+        color: var(--background);
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .acessibilidade{
+        padding: 3rem 1.5rem;
+    }
+
+    .acessibilidade h2{
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--botoes);
+        margin-top: 2rem;
+    }
+
+    .acessibilidade p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .container-acessibilidade{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .acessibilidade-item{
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .acessibilidade-icone{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acessibilidade-icone i{
+        font-size: 2rem;
+        color: #4920B4;
+        font-weight: bold;
+        margin-top: -35px;
+        margin-right: 10px;
+    }
+
+    .acessibilidade-conteudo h3{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: var(--botoes);
+    }
+
+    .tag{
+        font-size: 1.3rem;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+
+    .recursos h2{
+        font-size: 2rem;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto 50px;
+    }
+
+    .recursos-lista{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        max-width: 90%;
+        margin: 0 auto 50px;
+    }
+
+    .recurso-card{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+        box-shadow: 0 0 10px -6px black;
+    }
+
+    .recurso-icone i{
+        font-size: 2rem;
+        color: var(--botoes);
+        font-weight: bold;
+    }
+
+    .recurso-conteudo h3{
+        margin-bottom: .45rem;
+        font-size: 1.3rem;
+        color: #000;
+    }
+
+    .recurso-conteudo p{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .seta{
+        color: var(--botoes);
+        font-size: 1.5rem;
+    }
+
+    .recurso-card:focus-visible{
+        outline:3px solid #5B2EFF;
+        outline-offset:6px;
+        border-radius:16px;
+    }
+
+    .decoração img{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Passo a Passo */
+    .passos{
+        padding: 3rem 1rem;
+    }
+
+    .passos h2{
+        font-size: 2rem;
+        text-align: center;
+        max-width: 80%;
+        margin: 30px auto;
+    }
+
+    .passos-lista{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .passo{
+        border-bottom: 2px dotted var(--botoes);
+    }
+
+    .numero{
+        font-size: 1.8rem;
+    }
+
+    .passo-conteudo{
+        padding-top: .5rem;
+    }
+
+    .passo-conteudo h3{
+        margin: 1rem 0 .5rem;
+        font-size: 1.8rem;
+    }
+
+    .passo-conteudo p{
+        font-size: 1.3rem;
+        line-height: 1.1;
+        color: #000;
+    }
+
+    /* Área de diferencial */
+    .diferencial-card h2{
+        font-size: 2.2rem;
+    }
+
+    .diferencial-card p{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .img-diferencial img{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .botao-diferencial{
+        height: 50px;
+        width: 60%;
+        font-size: 2rem;
+        padding: 2rem;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .botao-diferencial:focus-visible{
+        outline:3px solid #fff;
+        outline-offset:6px;
+        border-radius:16px;
+    }
+
+    /* footer */
+  .footer-logo img {
+        width: 30%;
+        height: auto;
+        display: block;
+        margin: 0 auto -50px;
+    }
+
+    .footer-nav ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav li{
+        text-decoration: underline;
+    }
+
+    .footer-nav h3{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .footer-descricao {
+        margin: 30px auto;
+        max-width: 60%;
+        
+    }
+
+    .footer-descricao p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 56rem) {
+
+    header {
+        height: 90px;
+    }
+
+    .navbar {
+        padding: 0 50px;
+    }
+
+    .logo img {
+        width: 15%;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: -10px;
+        right: 20px;
+        width: auto;
+        height: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        background-color: transparent;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .nav-list li {
+        margin: 0;
+    }
+
+    .nav-list li:hover {
+        text-decoration: underline;
+    }
+
+    .nav-list a {
+        padding: 8px;
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding-top: 130px;
+    }
+
+        .secao-principal {
+        padding: 0 40px;
+    }
+
+    .secao-principal h1 {
+        font-size: 4rem;
+        margin: -150px auto 20px;
+    }
+
+    .secao-principal p {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto 50px;
+    }
+
+    .acessibilidade h2{
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        color: var(--botoes);
+        margin-top: 5rem;
+    }
+
+    .acessibilidade p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .container-acessibilidade{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+
+    .acessibilidade-item{
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .acessibilidade-icone{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acessibilidade-icone i{
+        font-size: 2rem;
+        color: #4920B4;
+        font-weight: bold;
+        margin-top: -35px;
+        margin-right: 10px;
+    }
+
+    .acessibilidade-conteudo h3{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: var(--botoes);
+    }
+
+    .tag{
+        font-size: 1.4rem;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-left: 40%;
+    }
+
+    .recursos h2{
+        font-size: 3rem;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .recursos-lista{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        max-width: 90%;
+        margin: 0 auto 50px;
+    }
+
+    .recursos-lista a:hover{
+        background-color: var(--roxo-destaque);
+    }
+
+    .recurso-icone i{
+        font-size: 3rem;
+        color: var(--botoes);
+        font-weight: bold;
+    }
+
+    .recurso-conteudo h3{
+        margin-bottom: .45rem;
+        font-size: 1.8rem;
+        color: #000;
+    }
+
+    .recurso-conteudo p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .seta{
+        color: var(--botoes);
+        font-size: 1.8rem;
+    }
+
+    .recurso-card:focus-visible{
+        outline:3px solid #5B2EFF;
+        outline-offset:6px;
+        border-radius:16px;
+    }
+
+    .decoração img{
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto 50px;
+    }
+
+    /* Passo a Passo */
+    .passos{
+        padding: 3rem 1rem;
+    }
+
+    .passos h2{
+        font-size: 3rem;
+        text-align: center;
+        max-width: 80%;
+        margin: 30px auto;
+    }
+
+    .passos-lista{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .passo{
+        border-bottom: 2px dotted var(--botoes);
+    }
+
+    .numero{
+        font-size: 1.8rem;
+    }
+
+    .passo-conteudo{
+        padding-top: .5rem;
+    }
+
+    .passo-conteudo h3{
+        margin: 1rem 0 .5rem;
+        font-size: 1.8rem;
+    }
+
+    .passo-conteudo p{
+        font-size: 1.3rem;
+        line-height: 1.1;
+        color: #000;
+    }
+
+    /* Área de diferencial */
+    .diferencial-card{
+        max-width: 80%;
+    }
+
+    .diferencial-card h2{
+        font-size: 2.5rem;
+    }
+
+    .diferencial-card p{
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    .img-diferencial img{
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .botao-diferencial{
+        height: 50px;
+        width: 40%;
+        font-size: 1.8rem;
+        padding: 2rem;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .botao-diferencial:focus-visible{
+        outline:3px solid #fff;
+        outline-offset:6px;
+        border-radius:16px;
+    }
+
+    /* footer */
+    .footer-logo img {
+        width: 20%;
+        height: auto;
+        display: block;
+        margin: 0 auto -50px;
+    }
+
+    .footer-nav ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav li{
+        text-decoration: underline;
+    }
+
+    .footer-nav h3{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .footer-descricao {
+        margin: 30px auto;
+        max-width: 60%;
+        
+    }
+
+    .footer-descricao p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+}
+
 /* REDUÇÃO DE MOVIMENTO */
 @media (prefers-reduced-motion: reduce) {
     html {
@@ -531,5 +1067,3 @@ h1 span{
         animation-iteration-count: 1 !important;
     }
 }
-
-

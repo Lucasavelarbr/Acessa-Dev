@@ -26,12 +26,12 @@ body{
 }
 
 .logo img{
-    width: 60%;
+    width: 35%;
     height: auto;
     display: block;
     position: fixed;
-    top: -10px;
-    left: 0;
+    top: 30px;
+    left: 10px;
     z-index: 5;
 }
 
@@ -335,13 +335,13 @@ body{
 .accessibility-guide-highlight > i {
     flex-shrink: 0;
     color: var(--botoes);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
 }
 
 .accessibility-guide-highlight p {
     color: var(--texto);
-    font-size: .95rem;
+    font-size: 5rem;
     line-height: 1.5;
 }
 
@@ -480,6 +480,500 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
     text-align: center;
     font-size: 1.3rem;
     margin-bottom: 20px;
+}
+
+/* TABLET */
+@media (min-width: 37.5rem){
+    .logo img {
+        width: 20%;
+        left: 30px;
+    }
+
+    /* CABEÇALHO DO ARTIGO */
+    .accessibility-guide-header {
+        padding-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /* CATEGORIA */
+    .accessibility-guide-category {
+        font-size: 1.2rem;
+    }
+
+    .accessibility-guide-category i {
+        font-size: 1.3rem;
+    }
+
+
+    /* TÍTULO */
+    .accessibility-guide-header h1 {
+        font-size: 2rem;
+    }
+
+
+    /* INTRODUÇÃO */
+    .accessibility-guide-introduction {
+        font-size: 1.5rem;
+        width: 100%;
+        hyphens: auto;
+    }
+
+    /* TEMPO DE LEITURA */
+    .accessibility-guide-header .accessibility-guide-reading-time {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    .accessibility-guide-header .accessibility-guide-reading-time i {
+        color: var(--botoes);
+        font-size: 1.2rem;
+    }
+
+    /* RESUMO */
+    .accessibility-guide-summary {
+        margin-bottom: 3rem;
+        padding: 1.25rem;
+        background-color: var(--roxo-claro);
+        border-radius: 10px;
+        max-width: 50%;
+    }
+
+    .accessibility-guide-summary h2 {
+        font-size: 1.5rem;
+    }
+
+    .accessibility-guide-summary li {
+        color: var(--texto);
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .accessibility-guide-summary li::marker {
+        color: var(--botoes);
+    }
+
+    /* RECURSO */
+    .accessibility-guide-resource {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    /* TÍTULO DA SEÇÃO */
+    .accessibility-guide-section-heading h2 {
+        font-size: 2rem;
+    }
+
+    /* TEXTO */
+    .accessibility-guide-section > p {
+        font-size: 1.5rem;
+
+    }
+
+    .accessibility-guide-section > p:last-child {
+        margin-bottom: 0;
+    }
+
+    .accessibility-guide-highlight > i {
+        flex-shrink: 0;
+        color: var(--botoes);
+        font-size: 2rem;
+
+    }
+
+    .accessibility-guide-highlight p {
+        color: var(--texto);
+        font-size: 1.5rem;
+        line-height: 1;
+        margin-top: 1rem;
+    }
+
+    strong {
+        color: var(--botoes);
+        font-size: 2rem;
+    }
+
+
+    /* CARDS DE BENEFÍCIOS */
+    .accessibility-guide-benefits {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    /* CARD DE BENEFÍCIO */
+    .accessibility-guide-benefit-card {
+        padding: 1.25rem;
+        background-color: var(--roxo-claro);
+        border-radius: 10px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.18);
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 10px;
+        padding: 20px;
+    }
+
+    .accessibility-guide-benefit-card > i {
+        display: block;
+        margin-bottom: 1rem;
+        color: var(--botoes);
+        font-size: 2rem;
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    .accessibility-guide-benefit-card h3 {
+        font-size: 1.3rem;
+        grid-column: 2;
+        grid-row: 1;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .accessibility-guide-benefit-card p {
+        color: var(--texto-secundario);
+        font-size: 1.2rem;
+        line-height: 1.5;
+        grid-column: 1 / -1;
+        margin: 10px 0 0;
+    }
+
+    .accessibility-guide-types li {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .65rem .85rem;
+        background-color: var(--roxo-claro);
+        border-radius: 999px;
+        color: var(--texto);
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .accessibility-guide-types i {
+        color: var(--botoes);
+        font-size: 1.5rem;
+    }
+
+
+    /* FOCO */
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+        outline: 3px solid var(--roxo-focus);
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
+
+        /* footer */
+  .footer-logo img {
+        width: 30%;
+        height: auto;
+        display: block;
+        margin: 0 auto -50px;
+    }
+
+    .footer-nav ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav li{
+        text-decoration: underline;
+    }
+
+    .footer-nav h3{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .footer-descricao {
+        margin: 30px auto;
+        max-width: 60%;
+        
+    }
+
+    .footer-descricao p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 56rem) {
+
+    /* HEADER */
+    header {
+        height: 90px;
+    }
+
+    .navbar {
+        height: 90px;
+        padding: 0 4rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        position: fixed;
+        width: 145px;
+        height: auto;
+        top: 24px;
+        left: 4rem;
+    }
+
+    /* MENU */
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        right: 4rem;
+        width: auto;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        transform: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list a {
+        display: inline-block;
+        padding: .5rem;
+        color: var(--botoes);
+        font-size: 1.2rem;
+        text-decoration: underline;
+        transition: color .2s ease;
+    }
+
+    .nav-list li:hover {
+        text-decoration: none;
+    }
+
+    .nav-list a:hover {
+        color: #290996;
+    }
+
+    /* ==============================
+       CONTEÚDO
+       ============================== */
+
+    .accessibility-guide-page {
+        width: 100%;
+        padding: 1rem 2rem 5rem;
+    }
+
+    .accessibility-guide-content {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* CABEÇALHO */
+    .accessibility-guide-header {
+        padding-top: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    .accessibility-guide-header h1 {
+        margin: 0 0 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .accessibility-guide-summary h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .accessibility-guide-summary ul {
+        gap: .6rem;
+    }
+
+    .accessibility-guide-summary li {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    
+    .accessibility-guide-resource {
+        margin-bottom: 2.5rem;
+    }
+
+    .accessibility-guide-section-heading {
+        gap: .8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .accessibility-guide-section-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 5rem;
+    }
+
+    .accessibility-guide-section-heading h2 {
+        margin-left: 0;
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .accessibility-guide-section > p {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        line-height: 1.8;
+    }
+
+    .accessibility-guide-highlight {
+        gap: 1rem;
+        margin-bottom: -50px;
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .accessibility-guide-highlight > i {
+        font-size: 1.5rem;
+    }
+
+    .accessibility-guide-highlight p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* ==============================
+       CARDS DE BENEFÍCIOS
+       ============================== */
+
+    .accessibility-guide-benefits {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+
+        margin-top: 2rem;
+    }
+
+    .accessibility-guide-benefit-card {
+        padding: 1.5rem;
+
+        border-radius: 12px;
+
+        transition:
+            transform .25s ease,
+            background-color .25s ease,
+            box-shadow .25s ease;
+    }
+
+    .accessibility-guide-benefit-card:hover {
+        background-color: var(--roxo-destaque);
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+    }
+
+    .accessibility-guide-benefit-card > i {
+        font-size: 1.5rem;
+    }
+
+    .accessibility-guide-benefit-card h3 {
+        font-size: 1.05rem;
+        margin: 0;
+    }
+
+    .accessibility-guide-benefit-card p {
+        font-size: .9rem;
+        line-height: 1.5;
+    }
+
+
+    /* ==============================
+       TIPOS DE ACESSIBILIDADE
+       ============================== */
+
+    .accessibility-guide-types {
+        gap: .75rem;
+        margin: 2rem 50px 2rem 50px;
+    }
+
+    .accessibility-guide-types li {
+        padding: .6rem .8rem;
+        font-size: 1.5rem;
+    }
+
+    .accessibility-guide-types i {
+        font-size: 1rem;
+    }
+
+
+    /* ==============================
+       FOOTER
+       ============================== */
+
+    .footer {
+        padding: 3rem 4rem;
+        margin-top: 6rem;
+    }
+
+    .footer-logo img {
+        width: 20%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer-descricao {
+        max-width: 40%;
+        margin: 0 auto 2rem;
+    }
+
+    .footer-descricao p {
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .footer-nav h3 {
+        margin: 2rem auto 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-nav li {
+        margin: 0;
+    }
+
+    .footer-nav a {
+        font-size: 1rem;
+    }
+
+    .footer-copy {
+        margin-top: 2rem;
+        font-size: .9rem;
+    }
 }
 
 /* REDUÇÃO DE MOVIMENTO */
