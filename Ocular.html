@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Ocular.css">
+    <title>Tamanho da fonte | Acessa Dev</title>
+
+</head>
+
+<body>
+
+<header>
+    <a href="./ferramentas.html" class="logo">
+        <img src="./IMG/logo.png" alt="Logo do Acessa Dev">
+    </a>
+
+    <nav class="navbar" aria-label="Navegação principal">
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="nav-list"
+            aria-label="Abrir menu hamburger">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+
+        </button>
+
+        <ul class="nav-list" id="nav-list">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./Guias.html">Guias</a></li>
+            <li><a href="./ferramentas.html">Ferramentas</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+    </nav>
+</header>
+
+ <main id="conteudo" class="eye-simulator">
+      <section class="eye-simulator-hero" aria-labelledby="page-title">
+        <div class="container hero-content">
+          <div>
+            <h1 id="page-title">Simulador de doenças oculares</h1>
+            <p>
+              Compare a visão original com uma simulação educativa e descubra
+              como criar interfaces mais acessíveis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container notice" aria-label="Aviso importante">
+        <i class="bi bi-info-circle" aria-hidden="true"></i>
+
+        <p>
+          Esta é uma simulação educativa; ela não representa integralmente a
+          experiência de cada pessoa.
+        </p>
+      </section>
+
+      <section class="container settings" aria-labelledby="simulator-title">
+        <h2 id="simulator-title">
+          <i class="bi bi-sliders" aria-hidden="true"></i>
+          Configure a simulação
+        </h2>
+
+        <div class="form-group">
+          <label for="eye-condition">1. Condição visual</label>
+
+          <select id="eye-condition" name="eye-condition">
+            <option value="catarata">Catarata</option>
+            <option value="glaucoma">Glaucoma</option>
+            <option value="retinopatia">Retinopatia diabética</option>
+            <option value="degeneracao">Degeneração macular</option>
+          </select>
+        </div>
+
+        <div class="condition-description" aria-live="polite">
+          <h3 id="selected-condition-title">Catarata</h3>
+          <p id="selected-condition-description"></p>
+        </div>
+
+        <fieldset>
+          <legend>2. Intensidade do efeito</legend>
+
+          <div class="severity-options">
+            <label>
+              <input type="radio" name="severity" value="leve">
+              <span>Leve</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="severity"
+                value="moderada"
+                checked
+              >
+              <span>Moderada</span>
+            </label>
+
+            <label>
+              <input type="radio" name="severity" value="grave">
+              <span>Grave</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button
+          class="apply-button"
+          id="apply-simulation"
+          type="button"
+        >
+          <i class="bi bi-eye" aria-hidden="true"></i>
+          Atualizar comparação
+        </button>
+
+        <p
+          id="simulation-status"
+          class="status"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </section>
+
+      <section
+        class="container comparison"
+        aria-labelledby="comparison-title"
+      >
+        <h2 id="comparison-title">Compare as visualizações</h2>
+
+        <div class="comparison-grid">
+          <article class="comparison-card">
+            <h3>
+              <i class="bi bi-display" aria-hidden="true"></i>
+              Visão original
+            </h3>
+
+            <div class="image-container">
+              <img
+                id="original-image"
+                src="./IMG/Visão-normal.jpg"
+                alt="Página de um site sem alterações visuais"
+              >
+            </div>
+
+            <p>Referência sem simulação.</p>
+          </article>
+
+          <article class="comparison-card">
+            <div class="comparison-heading">
+              <h3>
+                <i class="bi bi-eye" aria-hidden="true"></i>
+                Visão com
+                <span id="comparison-condition">catarata</span>
+              </h3>
+
+              <span id="comparison-severity" class="badge">
+                Moderada
+              </span>
+            </div>
+
+            <div class="image-container">
+              <img
+                id="simulation-image"
+                src="./IMG/catarata-moderada.jpg"
+                alt="Simulação de catarata em intensidade moderada"
+              >
+            </div>
+
+            <p id="simulation-caption">
+              Simulação educativa de catarata em intensidade moderada.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Use os nomes exatos existentes na sua pasta IMG -->
+      <div id="image-library" hidden>
+        <img
+          src="./IMG/Catarata-leve.jpg"
+          data-condition="catarata"
+          data-severity="leve"
+          alt=""
+        >
+        <img
+          src="./IMG/catarata-moderada.jpg"
+          data-condition="catarata"
+          data-severity="moderada"
+          alt=""
+        >
+        <img
+          src="./IMG/Catarata-grave.jpg"
+          data-condition="catarata"
+          data-severity="grave"
+          alt=""
+        >
+
+        <img
+          src="./IMG/Glaucoma-leve.jpg"
+          data-condition="glaucoma"
+          data-severity="leve"
+          alt=""
+        >
+        <img
+          src="./IMG/Glaucoma-moderado.jpg"
+          data-condition="glaucoma"
+          data-severity="moderada"
+          alt=""
+        >
+        <img
+          src="./IMG/Glaucoma-grave.jpg"
+          data-condition="glaucoma"
+          data-severity="grave"
+          alt=""
+        >
+
+        <img
+          src="./IMG/retinopatia-leve.jpg.png"
+          data-condition="retinopatia"
+          data-severity="leve"
+          alt=""
+        >
+        <img
+          src="./IMG/retinopatia-moderada.jpg.png"
+          data-condition="retinopatia"
+          data-severity="moderada"
+          alt=""
+        >
+        <img
+          src="./IMG/retinopatia-grave.jpg.png"
+          data-condition="retinopatia"
+          data-severity="grave"
+          alt=""
+        >
+
+        <img
+          src="./IMG/degeneracao-macular-leve.jpg.png"
+          data-condition="degeneracao"
+          data-severity="leve"
+          alt=""
+        >
+        <img
+          src="./IMG/degeneracao-macular-moderada.jpg.png"
+          data-condition="degeneracao"
+          data-severity="moderada"
+          alt=""
+        >
+        <img
+          src="./IMG/degeneracao-monocular-grave.jpg.png"
+          data-condition="degeneracao"
+          data-severity="grave"
+          alt=""
+        >
+      </div>
+    </main>
+
+
+<!-- FOOTER -->
+ <footer class="footer">
+
+    <div class="footer-logo">
+        <img src="./IMG/logo-branco.png" alt="Acessa Dev">
+    </div>
+
+    <div class="footer-descricao">
+        <p>
+            Ferramentas, guias e componentes para ajudar
+            desenvolvedores a criarem experiências digitais
+            mais acessíveis.
+        </p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Links do rodapé">
+        <h3>Navegação</h3>
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./ferramentas.html">Ferramentas</a></li>
+            <li><a href="./Guias.html">Guias</a></li>
+            <li><a href="#">Componentes</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <div class="footer-copy">
+        <p>© 2026 AcessaDev.</p>
+    </div>
+</footer>
+
+<script src="./script.js"></script>
+<script src="./Ocular.js"></script>
+</body>
+</html>
